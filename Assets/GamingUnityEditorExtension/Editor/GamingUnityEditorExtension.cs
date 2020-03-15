@@ -17,9 +17,10 @@ namespace EditorExtension
             _texture = AssetDatabase.LoadAssetAtPath<Texture2D>(assetPath: _imagePath);
 
             window.titleContent.text = "Gaming Unity";
-            window.minSize = Vector2.one * 10;
-            window.position = new Rect(100, 100, 100, 10);
             window.Show();
+
+            window.minSize = Vector2.one * 10;
+            window.position = new Rect(100, 100, 500, 10);
         }
 
         void Update()
